@@ -251,7 +251,365 @@
         android:inputType="textPersonName"
         android:text="" />
 
-    <Button
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ক্ষয়খতি সম্পর্কিত তথ্যঃ বন্যা" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ক্ষতির ধরণঃ" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="বসত বাড়ি" />
+
+        <RadioGroup
+            android:id="@+id/radioBoshotBarirKhoti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/radioBoshotBarirKhotiYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="হ্যা"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radioBoshotBarirKhotiNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="না" />
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ক্ষতির পরিমাণ (টাকায়)" />
+
+        <EditText
+            android:id="@+id/input9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="কৃষিজমিঃ" />
+
+        <RadioGroup
+            android:id="@+id/radioKrishiJomiKhoti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/radioKrishiJomiKhotiYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="হ্যা"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radioKrishiJomiKhotiNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="না" />
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ক্ষতির পরিমাণ (টাকায়)" />
+
+        <EditText
+            android:id="@+id/input10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ফসল" />
+
+        <RadioGroup
+            android:id="@+id/radioFoshol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/radioFosholYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="হ্যা"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radioFosholNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="না" />
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ক্ষতির পরিমাণ (টাকায়)" />
+
+        <EditText
+            android:id="@+id/input11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="পুকুরের মাছঃ" />
+
+        <RadioGroup
+            android:id="@+id/radioপPukurerMach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/radioPukurerMachYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="হ্যা"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radioPukurerMachNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="না" />
+
+        </RadioGroup>
+
+
+
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ক্ষতির পরিমাণ (টাকায়)" />
+
+        <EditText
+            android:id="@+id/input12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="অন্যান্যঃ" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ক্ষতির ধরণ" />
+
+        <EditText
+            android:id="@+id/input13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ক্ষতির পরিমান টাকায়" />
+
+        <EditText
+            android:id="@+id/input14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="এ মুহূর্তে কি ধরণের সাহাজ্য প্রত্যাশা করেন" />
+
+        <RadioGroup
+            android:id="@+id/radioEMuhurteShahajjo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/radioEMuhurteShahajjoArthik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="আর্থিক"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radioEMuhurteShahajjoOnnanno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="অন্যান্য" />
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="আর্থিক হলে কত টাকা" />
+
+        <EditText
+            android:id="@+id/input15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="সহায়তার ধরণ" />
+
+        <RadioGroup
+            android:id="@+id/radioSohayotarDhoron"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/radioSohayotarDhoronEkkaleen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="এককালীন অনুদান"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radioSohayotarDhoronReen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ঋণ" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="কার কাছ থেকে অনুদান আশা করেন" />
+
+        <RadioGroup
+            android:id="@+id/radioOnudanAsha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/radioOnudanAshaShorkari"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="সরকারী"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radioOnudanAshaBeshorkari"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="বেসরকারি" />
+
+            <RadioButton
+                android:id="@+id/radioOnudanAshaDadon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="দাদন" />
+
+            <RadioButton
+                android:id="@+id/radioMohajon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="মহাজন" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="অন্যন্য হলে কি ধরণেরঃ " />
+
+        <RadioGroup
+            android:id="@+id/radioOnnannohole"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/radioOnnannoholebeej"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="বীজ"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radioOnnannoholegrihonirman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="গৃহ নির্মাণ সামগ্রী" />
+
+            <RadioButton
+                android:id="@+id/radioOnnannoholegobadiposhu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="গবাদিপশু" />
+
+            <RadioButton
+                android:id="@+id/radioOnnanno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="অন্যন্য" />
+
+        </RadioGroup>
+
+
+
+
+        <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
