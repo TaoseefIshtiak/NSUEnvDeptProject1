@@ -4,15 +4,23 @@ import android.app.ProgressDialog;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.Signature;
+import android.support.design.widget.AppBarLayout;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Base64;
 import android.util.Log;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.RelativeLayout;
+import android.widget.Spinner;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
@@ -32,10 +40,17 @@ public class MainActivity extends AppCompatActivity {
             radioBoshotBarirKhoti, radioKrishiJomiKhoti, radioFoshol, radioPukurerMach, radioEMuhurteShahajjo, radioSohayotarDhoron,
             radioOnudanAsha, radioOnnannohole;
 
+    private Spinner spinnerKrishiJomiPoriman ;
+
+    public String[] jomirUnit = new String[]{"শতক", "বিঘা", "কাঠা", "পাথি"};
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Toolbar myToolbar = findViewById(R.id.my_toolbar);
+        setSupportActionBar(myToolbar);
         setContentView(R.layout.activity_main);
+
         mashik_bey = findViewById(R.id.input1);
         mashik_ay = findViewById(R.id.input2);
         krishijomi_promian = findViewById(R.id.input3);
@@ -54,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
 
         //radio button inputs
         radioKrishiJomiAcheKina = (RadioGroup) findViewById(R.id.radioKrishiJomiAcheKina);
-        radioKrishiJomiPoriman = (RadioGroup) findViewById(R.id.radioKrishiJomiPoriman);//unit
+        //radioKrishiJomiPoriman = (RadioGroup) findViewById(R.id.radioKrishiJomiPoriman);//unit
         radioBoshotVitarDhoron = (RadioGroup) findViewById(R.id.radioBoshotVitarDhoron);
         radioPukureMachChashKoreKina = (RadioGroup) findViewById(R.id.radioPukureMachChashKoreKina);
         radioBoshotBarirKhoti = (RadioGroup) findViewById(R.id.radioBoshotBarirKhoti);
@@ -66,8 +81,17 @@ public class MainActivity extends AppCompatActivity {
         radioOnudanAsha = (RadioGroup) findViewById(R.id.radioOnudanAsha);
         radioOnnannohole = (RadioGroup) findViewById(R.id.radioOnnannohole);
 
+        //Spinner inputs
+        spinnerKrishiJomiPoriman = (Spinner) findViewById(R.id.spinnerKrishiJomiPoriman);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, jomirUnit);
+        spinnerKrishiJomiPoriman.setAdapter(adapter);
+
+
         //printKeyHash();
 
+    }
+
+    private void setSupportActionBar(Toolbar myToolbar) {
     }
 
 
@@ -82,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
 
         // get selected radio button from radioGroup
         int selectedIdRG1 = radioKrishiJomiAcheKina.getCheckedRadioButtonId();
-        int selectedIdRG2 = radioKrishiJomiPoriman.getCheckedRadioButtonId();
+        //int selectedIdRG2 = radioKrishiJomiPoriman.getCheckedRadioButtonId();
         int selectedIdRG3 = radioBoshotVitarDhoron.getCheckedRadioButtonId();
         int selectedIdRG4 = radioPukureMachChashKoreKina.getCheckedRadioButtonId();
         int selectedIdRG5 = radioBoshotBarirKhoti.getCheckedRadioButtonId();
@@ -96,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
 
         // find the radiobutton by returned id
         RadioButton krishijomi_ache_kina = (RadioButton) findViewById(selectedIdRG1);
-        RadioButton Krishi_Jomi_Poriman = (RadioButton) findViewById(selectedIdRG2);
+        //RadioButton Krishi_Jomi_Poriman = (RadioButton) findViewById(selectedIdRG2);
         RadioButton Boshot_Vitar_Dhoron = (RadioButton) findViewById(selectedIdRG3);
         RadioButton Pukure_Mach_Chash_Kore_Kina = (RadioButton) findViewById(selectedIdRG4);
         RadioButton Boshot_Barir_Khoti = (RadioButton) findViewById(selectedIdRG5);
@@ -118,6 +142,10 @@ public class MainActivity extends AppCompatActivity {
         RequestParams req = new RequestParams();
         req.put("mashik_bey", mashik_bey.getText().toString());
         req.put("mashik_ay", mashik_ay.getText().toString());
+
+        //req.put("krishijomi_promian", krishijomi_promian.getText().toString());
+        req.put("krishijomi_promian", spinnerKrishiJomiPoriman.getSelectedItem().toString());
+
         req.put("krishijomi_promian", krishijomi_promian.getText().toString());
         req.put("gobadi_poshu_songkha_hash", gobadi_poshu_songkha_hash.getText().toString());
         req.put("gobadi_poshu_songkha_murgi", gobadi_poshu_songkha_murgi.getText().toString());
@@ -167,5 +195,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //Call this printKeyHash() method in your onCreateMethod() and check the logcat for your hash key.
+
+
+    // UI & UX
 
 }
