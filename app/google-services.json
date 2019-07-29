@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "778437280008",
+    "firebase_url": "https://envdatamining.firebaseio.com",
+    "project_id": "envdatamining",
+    "storage_bucket": "envdatamining.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:778437280008:android:9f6984dc37474da1",
+        "android_client_info": {
+          "package_name": "com.example.floodrelateddataloggernsuenvdept"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "778437280008-2ieblka9km6v39iaf4cm9oqo9m5qcaor.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.floodrelateddataloggernsuenvdept",
+            "certificate_hash": "5833f7cf391d707b1ce0d61fff528bc44d2453ea"
+          }
+        },
+        {
+          "client_id": "778437280008-app7hctbdh8gdji106nh7hhsejfknit9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLRaWTfZANNyj52V6lbK4V7hqvwgUqbwo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "778437280008-app7hctbdh8gdji106nh7hhsejfknit9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

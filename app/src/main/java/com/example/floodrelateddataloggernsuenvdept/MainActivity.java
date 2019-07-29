@@ -1,6 +1,7 @@
 package com.example.floodrelateddataloggernsuenvdept;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.Signature;
@@ -13,6 +14,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
@@ -22,6 +24,7 @@ import android.widget.Spinner;
 import android.widget.Toast;
 import android.widget.Toolbar;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
@@ -43,6 +46,9 @@ public class MainActivity extends AppCompatActivity {
     private Spinner spinnerKrishiJomiPoriman ;
 
     public String[] jomirUnit = new String[]{"শতক", "বিঘা", "কাঠা", "পাথি"};
+
+    Button logoutButton;
+    FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -86,9 +92,22 @@ public class MainActivity extends AppCompatActivity {
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, jomirUnit);
         spinnerKrishiJomiPoriman.setAdapter(adapter);
 
+        mAuth = FirebaseAuth.getInstance();
 
         //printKeyHash();
 
+        logoutButton = findViewById(R.id.logoutButton);
+        logoutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onStop();
+                mAuth.signOut();
+
+                Intent goToNextActivity = new Intent(getApplicationContext(), LoginActivity.class);
+                startActivity(goToNextActivity);
+                finish();
+            }
+        });
     }
 
     private void setSupportActionBar(Toolbar myToolbar) {
@@ -195,8 +214,5 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //Call this printKeyHash() method in your onCreateMethod() and check the logcat for your hash key.
-
-
-    // UI & UX
 
 }

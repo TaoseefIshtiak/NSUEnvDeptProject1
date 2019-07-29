@@ -27,7 +27,24 @@
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 app:layout_collapseMode="pin"
-                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                <Button
+                    android:layout_gravity="right|center_vertical"
+                    android:id="@+id/logoutButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:padding="0dp"
+                    android:layout_marginRight="8dp"
+                    android:text="Logout"
+                    android:textAllCaps="false"
+                    android:elevation="4dp"
+                    android:background="@drawable/rounded_shape_secondary"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp"
+                    android:layout_marginEnd="15dp" />
+
+            </android.support.v7.widget.Toolbar>
         </android.support.design.widget.CollapsingToolbarLayout>
 
     </android.support.design.widget.AppBarLayout>
