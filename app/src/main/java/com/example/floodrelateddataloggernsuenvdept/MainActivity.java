@@ -2,35 +2,28 @@ package com.example.floodrelateddataloggernsuenvdept;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
-import android.content.pm.Signature;
-import android.support.design.widget.AppBarLayout;
-import android.support.design.widget.CollapsingToolbarLayout;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Base64;
-import android.util.Log;
 import android.view.View;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.Toast;
 import android.widget.Toolbar;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
-
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 
 import cz.msebera.android.httpclient.Header;
 
@@ -50,12 +43,19 @@ public class MainActivity extends AppCompatActivity {
     Button logoutButton;
     FirebaseAuth mAuth;
 
+    String phone_number;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Toolbar myToolbar = findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
         setContentView(R.layout.activity_main);
+
+        mAuth = FirebaseAuth.getInstance();
+        phone_number = mAuth.getCurrentUser().getPhoneNumber();
+        checkForPhoneNumber(phone_number);
+
 
         mashik_bey = findViewById(R.id.input1);
         mashik_ay = findViewById(R.id.input2);
@@ -92,8 +92,6 @@ public class MainActivity extends AppCompatActivity {
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, jomirUnit);
         spinnerKrishiJomiPoriman.setAdapter(adapter);
 
-        mAuth = FirebaseAuth.getInstance();
-
         //printKeyHash();
 
         logoutButton = findViewById(R.id.logoutButton);
@@ -103,9 +101,30 @@ public class MainActivity extends AppCompatActivity {
                 onStop();
                 mAuth.signOut();
 
-                Intent goToNextActivity = new Intent(getApplicationContext(), LoginActivity.class);
+                Intent goToNextActivity = new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(goToNextActivity);
                 finish();
+            }
+        });
+
+    }
+
+    public void checkForPhoneNumber(String number){
+        DatabaseReference ref = FirebaseDatabase.getInstance().getReference();
+
+        ref.orderByChild(number).equalTo("new").addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                if(dataSnapshot.exists()){
+                    Intent goToNextActivity = new Intent(MainActivity.this, newUserFormActivity.class);
+                    startActivity(goToNextActivity);
+                    finish();
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
             }
         });
     }
