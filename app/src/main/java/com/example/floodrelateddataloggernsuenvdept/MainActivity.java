@@ -45,6 +45,9 @@ public class MainActivity extends AppCompatActivity {
 
     String phone_number;
 
+    //values
+    String total_income, total_expence, total_balance, over_spending;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -106,7 +109,31 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
+    }
 
+    public void getTotalIncome(EditText a, EditText b){
+        int result = Integer.parseInt(String.valueOf(a)) *12 + Integer.parseInt(String.valueOf(a));
+        total_income = String.valueOf(result);
+    }
+
+    public void getTotalExpences(EditText a, EditText b, EditText c, EditText d){
+        int result = Integer.parseInt(String.valueOf(a)) + Integer.parseInt(String.valueOf(b)) + Integer.parseInt(String.valueOf(c)) + Integer.parseInt(String.valueOf(d));
+        total_expence = String.valueOf(result);
+    }
+
+    public void getTotalBalance(String a, String b){
+         int x, y;
+         x = Integer.parseInt(a);
+         y = Integer.parseInt(b);
+
+         if(x>y){
+             total_balance = String.valueOf(x-y);
+             over_spending = "0";
+         }
+         else{
+             total_balance = "0";
+             over_spending = String.valueOf(y-x);
+         }
     }
 
     public void checkForPhoneNumber(String number){
@@ -141,6 +168,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void httpCallFunction(View v) {
+
+        // use this functions to calculate value
+
+        //getTotalIncome(mashik_ay, mach_theke_bochore_koto_ay_kore);
+        //getTotalExpences(krishi_jomir_ki_poriman_khoti_takay, fosholer_khotir_poriman_takay,pukure_macher_khotir_poriman_takay,onnanno_khotir_poriman_takay);
+        //getTotalBalance(total_income, total_expence);
+
 
         // get selected radio button from radioGroup
         int selectedIdRG1 = radioKrishiJomiAcheKina.getCheckedRadioButtonId();
