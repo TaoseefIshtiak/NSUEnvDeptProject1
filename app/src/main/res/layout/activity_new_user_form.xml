@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/ic_logo"/>
+
+        <TextView
+            android:paddingLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New User Form"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:paddingTop="80dp"
+        android:layout_below="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/imageView"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="নামঃ"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginEnd="8dp" />
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="পেশাঃ"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="কৃষি"
+                    android:checked="true"
+                    android:textSize="16sp"/>
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="জেলে"
+                    android:textSize="16sp"/>
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ব্যবসা"
+                    android:textSize="16sp"/>
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="চাকরি"
+                    android:textSize="16sp"/>
+                <RadioButton
+                    android:id="@+id/radioButton5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="দিনমজুর"
+                    android:textSize="16sp"/>
+                <RadioButton
+                    android:id="@+id/radioButton6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="অন্যান্য"
+                    android:textSize="16sp"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="শিক্ষাগত যোগ্যতাঃ"
+                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp" />
+
+            <Spinner
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_marginTop="10dp"
+                android:id="@+id/spinner1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"/>
+
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="পরিবারের সদস্য সংখ্যাঃ"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginEnd="8dp" />
+
+                <EditText
+                    android:id="@+id/family_member"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="পরিবারের উপার্জনক্ষম ব্যাক্তির সংখ্যাঃ"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginEnd="8dp" />
+
+                <EditText
+                    android:id="@+id/family_earing_member"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                style="@style/AppTheme.RoundedCornerMaterialButton"
+                android:id="@+id/buttonSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textColor="@color/colorWhite"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

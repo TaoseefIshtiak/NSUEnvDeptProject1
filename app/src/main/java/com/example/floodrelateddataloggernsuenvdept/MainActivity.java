@@ -1,25 +1,29 @@
 package com.example.floodrelateddataloggernsuenvdept;
 
 import android.app.ProgressDialog;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
-import android.content.pm.Signature;
+import android.content.Intent;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Base64;
-import android.util.Log;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Spinner;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
-
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 
 import cz.msebera.android.httpclient.Header;
 
@@ -32,10 +36,27 @@ public class MainActivity extends AppCompatActivity {
             radioBoshotBarirKhoti, radioKrishiJomiKhoti, radioFoshol, radioPukurerMach, radioEMuhurteShahajjo, radioSohayotarDhoron,
             radioOnudanAsha, radioOnnannohole;
 
+    private Spinner spinnerKrishiJomiPoriman ;
+
+    public String[] jomirUnit = new String[]{"শতক", "বিঘা", "কাঠা", "পাথি"};
+
+    Button logoutButton;
+    FirebaseAuth mAuth;
+
+    String phone_number;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Toolbar myToolbar = findViewById(R.id.my_toolbar);
+        setSupportActionBar(myToolbar);
         setContentView(R.layout.activity_main);
+
+        mAuth = FirebaseAuth.getInstance();
+        phone_number = mAuth.getCurrentUser().getPhoneNumber();
+        checkForPhoneNumber(phone_number);
+
+
         mashik_bey = findViewById(R.id.input1);
         mashik_ay = findViewById(R.id.input2);
         krishijomi_promian = findViewById(R.id.input3);
@@ -54,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
 
         //radio button inputs
         radioKrishiJomiAcheKina = (RadioGroup) findViewById(R.id.radioKrishiJomiAcheKina);
-        radioKrishiJomiPoriman = (RadioGroup) findViewById(R.id.radioKrishiJomiPoriman);//unit
+        //radioKrishiJomiPoriman = (RadioGroup) findViewById(R.id.radioKrishiJomiPoriman);//unit
         radioBoshotVitarDhoron = (RadioGroup) findViewById(R.id.radioBoshotVitarDhoron);
         radioPukureMachChashKoreKina = (RadioGroup) findViewById(R.id.radioPukureMachChashKoreKina);
         radioBoshotBarirKhoti = (RadioGroup) findViewById(R.id.radioBoshotBarirKhoti);
@@ -66,8 +87,49 @@ public class MainActivity extends AppCompatActivity {
         radioOnudanAsha = (RadioGroup) findViewById(R.id.radioOnudanAsha);
         radioOnnannohole = (RadioGroup) findViewById(R.id.radioOnnannohole);
 
+        //Spinner inputs
+        spinnerKrishiJomiPoriman = (Spinner) findViewById(R.id.spinnerKrishiJomiPoriman);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, jomirUnit);
+        spinnerKrishiJomiPoriman.setAdapter(adapter);
+
         //printKeyHash();
 
+        logoutButton = findViewById(R.id.logoutButton);
+        logoutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onStop();
+                mAuth.signOut();
+
+                Intent goToNextActivity = new Intent(MainActivity.this, LoginActivity.class);
+                startActivity(goToNextActivity);
+                finish();
+            }
+        });
+
+    }
+
+    public void checkForPhoneNumber(String number){
+        DatabaseReference ref = FirebaseDatabase.getInstance().getReference();
+
+        ref.orderByChild(number).equalTo("new").addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                if(dataSnapshot.exists()){
+                    Intent goToNextActivity = new Intent(MainActivity.this, newUserFormActivity.class);
+                    startActivity(goToNextActivity);
+                    finish();
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+    }
+
+    private void setSupportActionBar(Toolbar myToolbar) {
     }
 
 
@@ -82,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
 
         // get selected radio button from radioGroup
         int selectedIdRG1 = radioKrishiJomiAcheKina.getCheckedRadioButtonId();
-        int selectedIdRG2 = radioKrishiJomiPoriman.getCheckedRadioButtonId();
+        //int selectedIdRG2 = radioKrishiJomiPoriman.getCheckedRadioButtonId();
         int selectedIdRG3 = radioBoshotVitarDhoron.getCheckedRadioButtonId();
         int selectedIdRG4 = radioPukureMachChashKoreKina.getCheckedRadioButtonId();
         int selectedIdRG5 = radioBoshotBarirKhoti.getCheckedRadioButtonId();
@@ -96,6 +158,7 @@ public class MainActivity extends AppCompatActivity {
 
         // find the radiobutton by returned id
         RadioButton krishijomi_ache_kina = (RadioButton) findViewById(selectedIdRG1);
+<<<<<<< HEAD
         RadioButton krishijomi_promian_unit = (RadioButton) findViewById(selectedIdRG2);
         RadioButton boshot_bhitar_dhoron = (RadioButton) findViewById(selectedIdRG3);
         RadioButton pukure_mach_chash_kore_kina = (RadioButton) findViewById(selectedIdRG4);
@@ -107,6 +170,19 @@ public class MainActivity extends AppCompatActivity {
         RadioButton shohayotar_dhoron = (RadioButton) findViewById(selectedIdRG10);
         RadioButton kar_kach_theke_asha_koren = (RadioButton) findViewById(selectedIdRG11);
         RadioButton onnanno_ki_dhoroner_shoyayota = (RadioButton) findViewById(selectedIdRG12);
+=======
+        //RadioButton Krishi_Jomi_Poriman = (RadioButton) findViewById(selectedIdRG2);
+        RadioButton Boshot_Vitar_Dhoron = (RadioButton) findViewById(selectedIdRG3);
+        RadioButton Pukure_Mach_Chash_Kore_Kina = (RadioButton) findViewById(selectedIdRG4);
+        RadioButton Boshot_Barir_Khoti = (RadioButton) findViewById(selectedIdRG5);
+        RadioButton Krishi_Jomi_Khoti = (RadioButton) findViewById(selectedIdRG6);
+        RadioButton Foshol_ = (RadioButton) findViewById(selectedIdRG7);
+        RadioButton Pukurer_Mach = (RadioButton) findViewById(selectedIdRG8);
+        RadioButton EMuhurte_Shahajjo = (RadioButton) findViewById(selectedIdRG9);
+        RadioButton Sohayotar_Dhoron = (RadioButton) findViewById(selectedIdRG10);
+        RadioButton Onudan_Asha = (RadioButton) findViewById(selectedIdRG11);
+        RadioButton Onnannohole_ = (RadioButton) findViewById(selectedIdRG12);
+>>>>>>> 4bd00834ad73436f455ce00bbd3970bcce226f66
 
         Toast.makeText(this,
                 krishijomi_ache_kina.getText(), Toast.LENGTH_SHORT).show();
@@ -118,6 +194,10 @@ public class MainActivity extends AppCompatActivity {
         RequestParams req = new RequestParams();
         req.put("mashik_bey", mashik_bey.getText().toString());
         req.put("mashik_ay", mashik_ay.getText().toString());
+
+        //req.put("krishijomi_promian", krishijomi_promian.getText().toString());
+        req.put("krishijomi_promian", spinnerKrishiJomiPoriman.getSelectedItem().toString());
+
         req.put("krishijomi_promian", krishijomi_promian.getText().toString());
         req.put("gobadi_poshu_songkha_hash", gobadi_poshu_songkha_hash.getText().toString());
         req.put("gobadi_poshu_songkha_murgi", gobadi_poshu_songkha_murgi.getText().toString());
