@@ -206,26 +206,13 @@ public class MainActivity extends AppCompatActivity {
         int selectedIdRG6 = radioKrishiJomiKhoti.getCheckedRadioButtonId();
         int selectedIdRG7 = radioFoshol.getCheckedRadioButtonId();
         int selectedIdRG8 = radioPukurerMach.getCheckedRadioButtonId();
-        //int selectedIdRG9 = radioEMuhurteShahajjo.getCheckedRadioButtonId();
+        int selectedIdRG9 = radioEMuhurteShahajjo.getCheckedRadioButtonId();
         int selectedIdRG10 = radioSohayotarDhoron.getCheckedRadioButtonId();
         int selectedIdRG11 = radioOnudanAsha.getCheckedRadioButtonId();
         int selectedIdRG12 = radioOnnannohole.getCheckedRadioButtonId();
 
         // find the radiobutton by returned id
         RadioButton krishijomi_ache_kina = (RadioButton) findViewById(selectedIdRG1);
-<<<<<<< HEAD
-        RadioButton krishijomi_promian_unit = (RadioButton) findViewById(selectedIdRG2);
-        RadioButton boshot_bhitar_dhoron = (RadioButton) findViewById(selectedIdRG3);
-        RadioButton pukure_mach_chash_kore_kina = (RadioButton) findViewById(selectedIdRG4);
-        RadioButton boshot_bari_khoy_khoti_yesorno = (RadioButton) findViewById(selectedIdRG5);
-        RadioButton krishi_jomir_khoti_hoyeche_kina = (RadioButton) findViewById(selectedIdRG6);
-        RadioButton fosholer_khoti = (RadioButton) findViewById(selectedIdRG7);
-        RadioButton pukure_macher_khoti = (RadioButton) findViewById(selectedIdRG8);
-        //RadioButton EMuhurte_Shahajjo = (RadioButton) findViewById(selectedIdRG9);
-        RadioButton shohayotar_dhoron = (RadioButton) findViewById(selectedIdRG10);
-        RadioButton kar_kach_theke_asha_koren = (RadioButton) findViewById(selectedIdRG11);
-        RadioButton onnanno_ki_dhoroner_shoyayota = (RadioButton) findViewById(selectedIdRG12);
-=======
         //RadioButton Krishi_Jomi_Poriman = (RadioButton) findViewById(selectedIdRG2);
         RadioButton Boshot_Vitar_Dhoron = (RadioButton) findViewById(selectedIdRG3);
         RadioButton Pukure_Mach_Chash_Kore_Kina = (RadioButton) findViewById(selectedIdRG4);
@@ -237,7 +224,6 @@ public class MainActivity extends AppCompatActivity {
         RadioButton Sohayotar_Dhoron = (RadioButton) findViewById(selectedIdRG10);
         RadioButton Onudan_Asha = (RadioButton) findViewById(selectedIdRG11);
         RadioButton Onnannohole_ = (RadioButton) findViewById(selectedIdRG12);
->>>>>>> 4bd00834ad73436f455ce00bbd3970bcce226f66
 
         Toast.makeText(this,
                 krishijomi_ache_kina.getText(), Toast.LENGTH_SHORT).show();
@@ -266,18 +252,18 @@ public class MainActivity extends AppCompatActivity {
         req.put("onnanno_khotir_dhoron", onnanno_khotir_dhoron.getText().toString());
         req.put("onnanno_khotir_poriman_takay", onnanno_khotir_poriman_takay.getText().toString());
         req.put("arthik_koto_taka", mashik_bey.getText().toString());
+        req.put("mashik_bey", mashik_bey.getText().toString());
+        req.put("mashik_bey", mashik_bey.getText().toString());
+        req.put("mashik_bey", mashik_bey.getText().toString());
+        req.put("mashik_bey", mashik_bey.getText().toString());
+        req.put("mashik_bey", mashik_bey.getText().toString());
+        req.put("mashik_bey", mashik_bey.getText().toString());
+        req.put("mashik_bey", mashik_bey.getText().toString());
+        req.put("mashik_bey", mashik_bey.getText().toString());
+        req.put("mashik_bey", mashik_bey.getText().toString());
+        req.put("mashik_bey", mashik_bey.getText().toString());
         req.put("krishijomi_ache_kina", krishijomi_ache_kina.getText().toString());
-        req.put("krishijomi_promian_unit", krishijomi_promian_unit.getText().toString());
-        req.put("boshot_bhitar_dhoron", boshot_bhitar_dhoron.getText().toString());
-        req.put("pukure_mach_chash_kore_kina", pukure_mach_chash_kore_kina.getText().toString());
-        req.put("boshot_bari_khoy_khoti_yesorno", boshot_bari_khoy_khoti_yesorno.getText().toString());
-        req.put("krishi_jomir_khoti_hoyeche_kina", krishi_jomir_khoti_hoyeche_kina.getText().toString());
-        req.put("fosholer_khoti", fosholer_khoti.getText().toString());
-        req.put("pukure_macher_khoti", pukure_macher_khoti.getText().toString());
-        req.put("shohayotar_dhoron", shohayotar_dhoron.getText().toString());
-        req.put("kar_kach_theke_asha_koren", kar_kach_theke_asha_koren.getText().toString());
-        req.put("onnanno_ki_dhoroner_shoyayota", onnanno_ki_dhoroner_shoyayota.getText().toString());
-        client.post("http://192.168.0.105/envdeptDataLogger/public/api/articles", req, new AsyncHttpResponseHandler() {
+        client.post("http://192.168.0.103/envdeptDataLogger/public/api/articles", req, new AsyncHttpResponseHandler() {
 
             @Override
             public void onStart() {

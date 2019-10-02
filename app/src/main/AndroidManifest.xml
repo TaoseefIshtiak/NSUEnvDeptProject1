@@ -11,21 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-<<<<<<< HEAD
-        <activity android:name=".MainActivity2">
-=======
         <activity android:name=".newUserFormActivity" />
         <activity android:name=".VerifyPhoneActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".LoginActivity">
->>>>>>> 4bd00834ad73436f455ce00bbd3970bcce226f66
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>
