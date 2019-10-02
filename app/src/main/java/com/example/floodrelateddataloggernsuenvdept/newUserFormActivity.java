@@ -21,13 +21,13 @@ public class newUserFormActivity extends AppCompatActivity implements AdapterVie
 
     String user_education;
     Button buttonSave;
-    EditText name, family_member, family_earing_member;
+    EditText name, family_member, family_earning_member;
 
     private RadioGroup radioGroup;
     private RadioButton radioButton;
 
     // values
-    String user_name, user_job, user_family_member, user_family_earing_member , phone_number;
+    String user_name, user_job, user_family_member, user_family_earning_member , phone_number;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +35,7 @@ public class newUserFormActivity extends AppCompatActivity implements AdapterVie
         setContentView(R.layout.activity_new_user_form);
 
         name = findViewById(R.id.name);
-        family_earing_member = findViewById(R.id.family_earing_member);
+        family_earning_member = findViewById(R.id.family_earing_member);
         family_member = findViewById(R.id.family_member);
 
         radioGroup=(RadioGroup)findViewById(R.id.radioGroup);
@@ -53,18 +53,32 @@ public class newUserFormActivity extends AppCompatActivity implements AdapterVie
             public void onClick(View v) {
                 user_name = name.getText().toString();
                 user_family_member = family_member.getText().toString();
-                user_family_earing_member = family_earing_member.getText().toString();
+                user_family_earning_member = family_earning_member.getText().toString();
 
                 int selectedId=radioGroup.getCheckedRadioButtonId();
                 radioButton=(RadioButton)findViewById(selectedId);
                 user_job = radioButton.getText().toString();
 
-                phone_number = FirebaseAuth.getInstance().getCurrentUser().getPhoneNumber();
-                FirebaseDatabase database = FirebaseDatabase.getInstance();
-                DatabaseReference myRef = database.getReference("users").child(phone_number);
-                myRef.setValue("old");
+                if(user_name.matches("") || user_family_member.matches("") || user_family_earning_member.matches("")){
+                    Toast.makeText(getApplicationContext(), "Please Enter All the Info!", Toast.LENGTH_SHORT).show();
+                }else{
+                    phone_number = FirebaseAuth.getInstance().getCurrentUser().getPhoneNumber();
+                    FirebaseDatabase database = FirebaseDatabase.getInstance();
+                    DatabaseReference myRef = database.getReference("users").child(phone_number);
+                    myRef.setValue("old");
 
-                gotoMainActivity();
+                    DatabaseReference infoRef1 = database.getReference("userInfo").child(phone_number).child("name");
+                    infoRef1.setValue(user_name);
+                    DatabaseReference infoRef2 = database.getReference("userInfo").child(phone_number).child("job");
+                    infoRef2.setValue(user_job);
+                    DatabaseReference infoRef3 = database.getReference("userInfo").child(phone_number).child("family_members");
+                    infoRef3.setValue(user_family_member);
+                    DatabaseReference infoRef4 = database.getReference("userInfo").child(phone_number).child("family_earning_members");
+                    infoRef4.setValue(user_family_earning_member);
+
+                    Toast.makeText(getApplicationContext(), "Saved!", Toast.LENGTH_SHORT).show();
+                    gotoMainActivity();
+                }
             }
         });
 

@@ -12,6 +12,7 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.Toolbar;
 
@@ -43,7 +44,9 @@ public class MainActivity extends AppCompatActivity {
     Button logoutButton;
     FirebaseAuth mAuth;
 
-    String phone_number;
+    String phone_number, user_name = "";
+
+    TextView profilePhone, profileName;
 
     //values
     String total_income, total_expence, total_balance, over_spending;
@@ -59,6 +62,24 @@ public class MainActivity extends AppCompatActivity {
         phone_number = mAuth.getCurrentUser().getPhoneNumber();
         checkForPhoneNumber(phone_number);
 
+        profileName =findViewById(R.id.profileName);
+        DatabaseReference profileRef = FirebaseDatabase.getInstance().getReference().child("userInfo").child(phone_number).child("name");
+        profileRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                user_name = dataSnapshot.getValue(String.class);
+                profileName.setText(user_name);
+                profileName.setVisibility(View.VISIBLE);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+        profilePhone = findViewById(R.id.profilePhone);
+        profilePhone.setText(phone_number);
 
         mashik_bey = findViewById(R.id.input1);
         mashik_ay = findViewById(R.id.input2);
