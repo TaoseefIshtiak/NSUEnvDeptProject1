@@ -33,6 +33,7 @@ Route::post('articles', function(Request $request) {
     $artcile->krishijomi_ache_kina = $request->krishijomi_ache_kina;
     $artcile->krishijomi_promian = $request->krishijomi_promian;
     $artcile->krishijomi_promian_unit = $request->krishijomi_promian_unit;
+    $artcile->boshot_bhitar_dhoron = $request->boshot_bhitar_dhoron;
     $artcile->gobadi_poshu_songkha_hash = $request->gobadi_poshu_songkha_hash;
     $artcile->gobadi_poshu_songkha_murgi = $request->gobadi_poshu_songkha_murgi;
     $artcile->gobadi_poshu_songkha_goru = $request->gobadi_poshu_songkha_goru;
