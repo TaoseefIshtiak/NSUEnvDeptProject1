@@ -69,6 +69,7 @@
             android:inputType="phone"
             android:textSize="18sp"
             android:gravity="center_horizontal"
+            android:imeOptions="actionDone"
             android:maxLength="10" />
 
         <Button

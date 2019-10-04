@@ -48,9 +48,6 @@ public class MainActivity extends AppCompatActivity {
 
     TextView profilePhone, profileName;
 
-    //values
-    String total_income, total_expence, total_balance, over_spending;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -132,31 +129,6 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void getTotalIncome(EditText a, EditText b){
-        int result = Integer.parseInt(String.valueOf(a)) *12 + Integer.parseInt(String.valueOf(a));
-        total_income = String.valueOf(result);
-    }
-
-    public void getTotalExpences(EditText a, EditText b, EditText c, EditText d){
-        int result = Integer.parseInt(String.valueOf(a)) + Integer.parseInt(String.valueOf(b)) + Integer.parseInt(String.valueOf(c)) + Integer.parseInt(String.valueOf(d));
-        total_expence = String.valueOf(result);
-    }
-
-    public void getTotalBalance(String a, String b){
-         int x, y;
-         x = Integer.parseInt(a);
-         y = Integer.parseInt(b);
-
-         if(x>y){
-             total_balance = String.valueOf(x-y);
-             over_spending = "0";
-         }
-         else{
-             total_balance = "0";
-             over_spending = String.valueOf(y-x);
-         }
-    }
-
     public void checkForPhoneNumber(String number){
         DatabaseReference ref = FirebaseDatabase.getInstance().getReference();
 
@@ -190,13 +162,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void httpCallFunction(View v) {
 
-        // use this functions to calculate value
-
-        //getTotalIncome(mashik_ay, mach_theke_bochore_koto_ay_kore);
-        //getTotalExpences(krishi_jomir_ki_poriman_khoti_takay, fosholer_khotir_poriman_takay,pukure_macher_khotir_poriman_takay,onnanno_khotir_poriman_takay);
-        //getTotalBalance(total_income, total_expence);
-
-
         // get selected radio button from radioGroup
         int selectedIdRG1 = radioKrishiJomiAcheKina.getCheckedRadioButtonId();
         //int selectedIdRG2 = radioKrishiJomiPoriman.getCheckedRadioButtonId();
@@ -224,9 +189,6 @@ public class MainActivity extends AppCompatActivity {
         RadioButton Sohayotar_Dhoron = (RadioButton) findViewById(selectedIdRG10);
         RadioButton Onudan_Asha = (RadioButton) findViewById(selectedIdRG11);
         RadioButton Onnannohole_ = (RadioButton) findViewById(selectedIdRG12);
-
-        Toast.makeText(this,
-                krishijomi_ache_kina.getText(), Toast.LENGTH_SHORT).show();
 
         final ProgressDialog bar = new ProgressDialog(this);
         bar.setMessage("Sending Data");
@@ -263,6 +225,7 @@ public class MainActivity extends AppCompatActivity {
         req.put("mashik_bey", mashik_bey.getText().toString());
         req.put("mashik_bey", mashik_bey.getText().toString());
         req.put("krishijomi_ache_kina", krishijomi_ache_kina.getText().toString());
+
         client.post("http://192.168.0.103/envdeptDataLogger/public/api/articles", req, new AsyncHttpResponseHandler() {
 
             @Override
@@ -284,6 +247,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
+
 
     }
 
