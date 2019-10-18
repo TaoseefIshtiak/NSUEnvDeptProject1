@@ -898,7 +898,25 @@
                 android:layout_margin="12dp"
                 android:onClick="httpCallFunction"
                 android:text="Submit"
-                android:textSize="18sp"/>
+                android:textSize="18sp"
+                android:layout_marginBottom="30dp"/>
+
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_marginHorizontal="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:id="@+id/show_location"
+                    />
+
+            </LinearLayout>
 
         </LinearLayout>
 

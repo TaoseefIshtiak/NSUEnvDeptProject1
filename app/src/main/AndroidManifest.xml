@@ -3,6 +3,8 @@
     package="com.example.floodrelateddataloggernsuenvdept">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
 
     <application
         android:allowBackup="true"
@@ -14,7 +16,8 @@
         <activity android:name=".newUserFormActivity" />
         <activity android:name=".VerifyPhoneActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".LoginActivity">
+        <activity android:name=".LoginActivity"
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

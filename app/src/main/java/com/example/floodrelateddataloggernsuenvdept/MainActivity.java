@@ -1,8 +1,17 @@
 package com.example.floodrelateddataloggernsuenvdept;
 
+import android.Manifest;
 import android.app.ProgressDialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.location.Location;
+import android.location.LocationManager;
+import android.provider.Settings;
 import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -16,6 +25,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.Toolbar;
 
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -30,6 +40,8 @@ import cz.msebera.android.httpclient.Header;
 
 public class MainActivity extends AppCompatActivity {
 
+    private static  final int REQUEST_LOCATION=1;
+
     EditText mashik_bey, mashik_ay, krishijomi_promian, gobadi_poshu_songkha_hash, gobadi_poshu_songkha_murgi, gobadi_poshu_songkha_goru, gobadi_poshu_songkha_chagol, mach_theke_bochore_koto_ay_kore,
     boshot_bari_khoy_khotir_poriman, krishi_jomir_ki_poriman_khoti_takay, fosholer_khotir_poriman_takay, pukure_macher_khotir_poriman_takay,
             onnanno_khotir_dhoron, onnanno_khotir_poriman_takay, arthik_koto_taka;
@@ -41,12 +53,17 @@ public class MainActivity extends AppCompatActivity {
 
     public String[] jomirUnit = new String[]{"শতক", "বিঘা", "কাঠা", "পাথি"};
 
+    LocationManager locationManager;
+    TextView showLocationTxt;
+
     Button logoutButton;
     FirebaseAuth mAuth;
 
     String phone_number, user_name = "";
 
     TextView profilePhone, profileName;
+
+    String latitude,longitude;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -115,6 +132,8 @@ public class MainActivity extends AppCompatActivity {
 
         //printKeyHash();
 
+        showLocationTxt=findViewById(R.id.show_location);
+
         logoutButton = findViewById(R.id.logoutButton);
         logoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -127,6 +146,91 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
+    }
+    private void OnGPS() {
+
+        final AlertDialog.Builder builder= new AlertDialog.Builder(this);
+
+        builder.setMessage("Enable GPS").setCancelable(false).setPositiveButton("YES", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                startActivity(new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS));
+            }
+        }).setNegativeButton("NO", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+                dialog.cancel();
+            }
+        });
+        final AlertDialog alertDialog=builder.create();
+        alertDialog.show();
+    }
+
+    public void setLocation(){
+        locationManager=(LocationManager) getSystemService(Context.LOCATION_SERVICE);
+
+        if (!locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER))
+        {
+            OnGPS();
+        }
+        else
+        {
+            getLocation();
+        }
+    }
+
+    private void getLocation() {
+
+        if (ActivityCompat.checkSelfPermission(MainActivity.this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(MainActivity.this,
+
+                Manifest.permission.ACCESS_COARSE_LOCATION) !=PackageManager.PERMISSION_GRANTED)
+        {
+            ActivityCompat.requestPermissions(this,new String[]
+                    {Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_LOCATION);
+        }
+        else
+        {
+            Location LocationGps= locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+            Location LocationNetwork=locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
+            Location LocationPassive=locationManager.getLastKnownLocation(LocationManager.PASSIVE_PROVIDER);
+
+            if (LocationGps !=null)
+            {
+                double lat=LocationGps.getLatitude();
+                double longi=LocationGps.getLongitude();
+
+                latitude=String.valueOf(lat);
+                longitude=String.valueOf(longi);
+
+                showLocationTxt.setText("Latitude= "+latitude+"\n"+"Longitude= "+longitude);
+            }
+            else if (LocationNetwork !=null)
+            {
+                double lat=LocationNetwork.getLatitude();
+                double longi=LocationNetwork.getLongitude();
+
+                latitude=String.valueOf(lat);
+                longitude=String.valueOf(longi);
+
+                showLocationTxt.setText("Latitude= "+latitude+"\n"+"Longitude= "+longitude);
+            }
+            else if (LocationPassive !=null)
+            {
+                double lat=LocationPassive.getLatitude();
+                double longi=LocationPassive.getLongitude();
+
+                latitude=String.valueOf(lat);
+                longitude=String.valueOf(longi);
+
+                showLocationTxt.setText("Latitude= "+latitude+"\n"+"Longitude= "+longitude);
+            }
+            else
+            {
+                Toast.makeText(this, "Open Google Maps to connect properly", Toast.LENGTH_SHORT).show();
+            }
+        }
+
     }
 
     public void checkForPhoneNumber(String number){
@@ -161,6 +265,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void httpCallFunction(View v) {
+
+        setLocation();
 
         // get selected radio button from radioGroup
         int selectedIdRG1 = radioKrishiJomiAcheKina.getCheckedRadioButtonId();
