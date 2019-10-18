@@ -268,6 +268,8 @@ public class MainActivity extends AppCompatActivity {
 
         setLocation();
 
+
+
         // get selected radio button from radioGroup
         int selectedIdRG1 = radioKrishiJomiAcheKina.getCheckedRadioButtonId();
         //int selectedIdRG2 = radioKrishiJomiPoriman.getCheckedRadioButtonId();

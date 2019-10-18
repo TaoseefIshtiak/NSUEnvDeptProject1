@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Agriculture Panel Data</string>
+    <string name="app_name">Flood related Data Logger</string>
     <string name="FACEBOOK_APP_ID">352437255477156</string>
     <string name="ACCOUNT_KIT_CLIENT_TOKEN">[ACCOUNT_KIT_CLIENT_TOKEN]</string>
 
