@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Flood related Data Logger</string>
+    <string name="FACEBOOK_APP_ID">352437255477156</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">[ACCOUNT_KIT_CLIENT_TOKEN]</string>
+
+    <string-array name="education">
+        <item> প্রাতিষ্ঠানিক শিক্ষা নাই </item>
+        <item> ৫ম শ্রেণি পর্যন্ত </item>
+        <item> ৫-৮ শ্রেণি </item>
+        <item> এস, এস, সি </item>
+        <item> এইচ, এস, সি </item>
+        <item> বি, এস </item>
+        <item> এম, এস </item>
+    </string-array>
+</resources>

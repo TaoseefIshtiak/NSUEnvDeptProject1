@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /node_modules
 /public/hot
 /public/storage
@@ -9,3 +10,18 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
+=======
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+>>>>>>> 1d07633a7d03478a65430ed8426486f927bb52e9
