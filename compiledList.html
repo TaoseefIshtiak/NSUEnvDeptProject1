@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>বন্যায় দুর্গতদের ক্ষয়ক্ষতি সম্পর্কিত তথ্য</title>
+ <link rel="stylesheet" href="style.css">
+ <script src="bower_components\jquery\dist\jquery.min.js"></script>
+ <script src="bower_components\jquery-table2excel\dist\jquery.table2excel.min.js"></script>
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.rawgit.com/rainabba/jquery-table2excel/1.1.0/dist/jquery.table2excel.min.js"></script>
+ <style>
+  table {
+   border-collapse: collapse;
+   width: 100%;
+   color: #588c7e;
+   font-family: monospace;
+   font-size: 25px;
+   text-align: left;
+     } 
+  th, td {
+   background-color: #588c7e;
+   color: white;
+   border: 1px solid orange;
+   padding: 10px;
+   text-align: left;
+  }
+  .button {
+  border: 1px solid #3498db;
+  background: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: "montserrat";
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+
+.button:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+  tr:nth-child(even) {background-color: #f2f2f2}
+ </style>
+</head>
+<body>
+<table class="table2excel" data-tableName="Test Table 1">
+        <tr>
+         <th>তথ্য</th>
+         <th>সংখ্যা</th> 
+        </tr>
+        <tr><td> এলাকায় কত জনের কৃষি জমি আছে  </td> <td> ১৫ </td> </tr>
+        <tr><td> এলাকায় মোট কৃষি জমির পরিমাণ </td> <td> ১০০ বিঘা </td></tr>
+        <tr><td> বসত ভিটার কোন ধরনের </td> <td>  ১। কাঁচা-২০ টি ২। টিনশেড-১৫ টি ৩। আধাপাকা-১০টি ৪। পাকা-৫ টি </td></tr> 
+        <tr><td> গবাদি পশুর কতটি </td> <td> ১। কাঁচা-২০ টি ২। টিনশেড-১৫ টি ৩। আধাপাকা-১০টি ৪। পাকা-৫ টি </td></tr> 
+        <tr><td> বন্যায় মোট কতটি বসত বাড়ির ক্ষতি </td> <td> ২০টি </td></tr>
+       </table>
+       </body>
