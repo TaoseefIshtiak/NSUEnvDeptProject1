@@ -11,8 +11,30 @@ class ArticleController extends Controller
         return view('compiledAgriculturePanelData');
     }
 
-    public function krishiJomi()
+    public function showKrishiJomi()
     {
         return view('compiledList');
     }
+
+    public function showBoroChashi()
+    {
+        return view('compiledBoroChashi');
+    }
+
+    public function showBorgaChashi()
+    {
+        return view('compiledBorgaChashi');
+    }
+
+    public function showChotoChashi()
+    {
+        return view('compiledChotoChashi');
+    }
+
+    public function showMap()
+    {
+        return view('hitMap');
+    }
+
+
 }

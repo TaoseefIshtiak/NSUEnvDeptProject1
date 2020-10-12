@@ -1,244 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="11fc66de-5678-4aaf-920c-41e6da9672fd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/envdeptDataLogger.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/envdeptDataLogger.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/.env.example" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/.idea/php.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/.styleci.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/Buttons hover effects/Buttons hover effects/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/app/Article.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/app/Console/Kernel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/app/Exceptions/Handler.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/app/Http/Controllers/Auth/ForgotPasswordController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/app/Http/Controllers/Auth/ResetPasswordController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/app/Http/Controllers/Auth/VerificationController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/app/Http/Controllers/Controller.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/app/Http/Kernel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/app/Http/Middleware/Authenticate.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/app/Http/Middleware/CheckForMaintenanceMode.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/app/Http/Middleware/EncryptCookies.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/app/Http/Middleware/TrimStrings.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/app/Http/Middleware/TrustProxies.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/app/Providers/AppServiceProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/app/Providers/AuthServiceProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/app/Providers/BroadcastServiceProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/app/Providers/EventServiceProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/app/Providers/RouteServiceProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/app/User.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/artisan" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bootstrap/app.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bootstrap/cache/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery-table2excel/.bower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery-table2excel/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery-table2excel/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery-table2excel/.gitpod.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery-table2excel/.jshintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery-table2excel/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery-table2excel/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery-table2excel/CONTRIBUTING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery-table2excel/Gruntfile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery-table2excel/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery-table2excel/bower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery-table2excel/demo/download.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery-table2excel/demo/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery-table2excel/dist/jquery.table2excel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery-table2excel/dist/jquery.table2excel.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery-table2excel/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery-table2excel/serve.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery-table2excel/src/jquery.table2excel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery-table2excel/table2excel.jquery.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery-table2excel/yarn.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/.bower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/AUTHORS.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/bower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/dist/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/dist/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/dist/jquery.min.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/external/sizzle/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/external/sizzle/dist/sizzle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/external/sizzle/dist/sizzle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/external/sizzle/dist/sizzle.min.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/.jshintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/ajax.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/ajax/jsonp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/ajax/load.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/ajax/parseJSON.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/ajax/parseXML.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/ajax/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/ajax/var/location.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/ajax/var/nonce.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/ajax/var/rquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/ajax/xhr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/attributes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/attributes/attr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/attributes/classes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/attributes/prop.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/attributes/support.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/attributes/val.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/callbacks.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/core.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/core/access.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/core/init.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/core/parseHTML.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/core/ready.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/core/var/rsingleTag.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/css.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/css/addGetHookIf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/css/adjustCSS.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/css/curCSS.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/css/defaultDisplay.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/css/hiddenVisibleSelectors.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/css/showHide.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/css/support.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/css/var/cssExpand.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/css/var/getStyles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/css/var/isHidden.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/css/var/rmargin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/css/var/rnumnonpx.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/css/var/swap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/data.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/data/Data.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/data/var/acceptData.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/data/var/dataPriv.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/data/var/dataUser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/deferred.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/deprecated.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/dimensions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/effects.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/effects/Tween.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/effects/animatedSelector.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/event.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/event/ajax.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/event/alias.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/event/focusin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/event/support.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/event/trigger.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/exports/amd.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/exports/global.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/intro.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/manipulation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/manipulation/_evalUrl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/manipulation/buildFragment.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/manipulation/getAll.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/manipulation/setGlobalEval.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/manipulation/support.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/manipulation/var/rcheckableType.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/manipulation/var/rscriptType.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/manipulation/var/rtagName.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/manipulation/wrapMap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/offset.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/outro.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/queue.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/queue/delay.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/selector-native.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/selector-sizzle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/selector.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/serialize.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/traversing.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/traversing/findFilter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/traversing/var/dir.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/traversing/var/rneedsContext.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/traversing/var/siblings.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/var/arr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/var/class2type.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/var/concat.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/var/document.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/var/documentElement.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/var/hasOwn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/var/indexOf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/var/pnum.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/var/push.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/var/rcssNum.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/var/rnotwhite.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/var/slice.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/var/support.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/var/toString.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/bower_components/jquery/src/wrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/compiledChagol.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/compiledGoru.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/compiledHash.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/compiledList.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/compiledList.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/compiledMurgi.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/compiledPukur.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/composer.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/config/app.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/config/auth.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/config/broadcasting.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/config/cache.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/config/database.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/config/filesystems.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/config/hashing.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/config/logging.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/config/mail.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/config/queue.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/config/services.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/config/session.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/config/view.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/database/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/database/factories/UserFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/database/migrations/2019_05_09_093603_create_articles_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/database/seeds/ArticlesTableSeeder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/database/seeds/DatabaseSeeder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/phpunit.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/public/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/public/css/app.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/public/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/public/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/resources/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/resources/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/resources/js/components/ExampleComponent.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/resources/lang/en/auth.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/resources/lang/en/pagination.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/resources/lang/en/passwords.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/resources/lang/en/validation.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/resources/sass/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/resources/sass/app.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/resources/views/welcome.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/routes/api.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/routes/channels.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/routes/console.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/routes/web.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/server.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/showData.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/storage/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/storage/app/public/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/storage/framework/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/storage/framework/cache/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/storage/framework/cache/data/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/storage/framework/sessions/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/storage/framework/testing/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/storage/framework/views/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/storage/logs/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/tests/CreatesApplication.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/tests/Feature/ExampleTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/tests/TestCase.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/tests/Unit/ExampleTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/webpack.mix.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/envdeptDataLogger/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final Map.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -371,7 +147,19 @@
       <recent name="C:\xampp\htdocs\envdeptDataLogger\resources\views" />
     </key>
   </component>
-  <component name="RunManager" selected="Android App.app">
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.compiledList.php">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -460,7 +248,12 @@
       <workItem from="1571373512141" duration="421000" />
       <workItem from="1571516803948" duration="1778000" />
       <workItem from="1594693952977" duration="200000" />
-      <workItem from="1595256809503" duration="4311000" />
+      <workItem from="1595256809503" duration="4913000" />
+      <workItem from="1595844874361" duration="1136000" />
+      <workItem from="1596034659076" duration="1205000" />
+      <workItem from="1596069663302" duration="755000" />
+      <workItem from="1596070723625" duration="18000" />
+      <workItem from="1596070964411" duration="43000" />
     </task>
     <servers />
   </component>

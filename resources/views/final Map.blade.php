@@ -23,7 +23,7 @@
 <body onload="myFunction()">
     <input type="text" name="searchInput" id="searchInput">
     <div id = "map">
-        
+
     </div>
 
 </body>
@@ -75,18 +75,18 @@
         [23.814125, 90.440708],
         [23.809257, 90.433327],
         [23.822998, 90.437876],
- 
+
         ];
 
 
         var maker, i;
         var image = {
-            url : 'farmer.jpg',
+            url : 'C:/xampp/htdocs/envdeptDataLogger/resources/views/farmer.jpg',
             scaledSize: new google.maps.Size(50, 50)
         }
 
         var image2 = {
-            url : 'farmer.jpg',
+            url : 'C:/xampp/htdocs/envdeptDataLogger/resources/views/farmer.jpg',
             scaledSize: new google.maps.Size(50, 50)
         }
 
@@ -98,7 +98,7 @@
             position: new google.maps.LatLng(boroChashis[i][0], boroChashis[i][1]),
             map : maps,
             title : 'Boro Chashi',
-            icon: image           
+            icon: image,
             });
 
             var dataOnMarker = "<table><tr><td>Location Area: </td>"+
@@ -118,7 +118,7 @@
            position: new google.maps.LatLng(speedBreakerLocations[i][0], speedBreakerLocations[i][1]),
            map : maps,
            title : 'Choto Chashi',
-           icon: image2           
+           icon: image2
           });
 
             var dataOnMarker = "<table><tr><td>Location Area: </td>"+
@@ -141,7 +141,7 @@
 
         //ekhan theke edit korte hbe
     }
-    
+
 </script>
 <!-- <script type= "text/javascript" src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCwklBKzd9Ajz0__bH-51Pmrz-njBeLYiY"></script> -->
 <script src="https://maps.googleapis.com/maps/api/js?callback=myFunction"></script>

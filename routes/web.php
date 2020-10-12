@@ -12,8 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('compiledAgriculturePanelData');
 });
 
 Route::get('/showAgriculturePanelData', 'ArticleController@index');
 Route::get('/showKrishiJomi', 'ArticleController@krishiJomi');
+Route::get('/showBoroChashi', 'ArticleController@boroChashi');
+Route::get('/showBorgaChashi', 'ArticleController@borgaChashi');
+Route::get('/showChotoChashi', 'ArticleController@chotoChashi');
+Route::get('/showMap', 'ArticleController@showMap');

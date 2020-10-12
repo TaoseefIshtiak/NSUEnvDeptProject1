@@ -198,17 +198,17 @@
     });
 </script>
 <button class="btn btn2"><a href="/showKrishiJomi">ি আছে কয়জনের</button>
-<button class="btn btn2"><a href="compiledHash.php">হাঁস পালন করে কয়জন</button>
+<!-- <button class="btn btn2"><a href="compiledHash.php">হাঁস পালন করে কয়জন</button>
 <button class="btn btn2"><a href="compiledMurgi.php">মুরগি পালন করে কয়জন</button>
 <button class="btn btn2"><a href="compiledGoru.php">গরু পালন করে কয়জন</button>
 <button class="btn btn2"><a href="compiledChagol.php">ছাগল পালন করে কয়জন</button>
 <button class="btn btn2"><a href="compiledPukur.php">পুকুর আছে কয়জনের</button>
-<button class="btn btn2"><a href="compiledAgriculturePanelData.php">প্যানেল ডেটা</button>
-<button class="btn btn2"><a href="compiledBoroChashi.php">বড় চাষীর তালিকা</button>
-<button class="btn btn2"><a href="compiledMajhariChashi.php">মাঝারি চাষীর তালিকা</button>
-<button class="btn btn2"><a href="compiledChotoChashi.php">ছোট চাষীর তালিকা</button>
-<button class="btn btn2"><a href="compiledBorgaChashi.php">বর্গাচাষীর তালিকা</button>
-<button class="btn btn2"><a href="final Map.html">Show Hit Map</button>
+<button class="btn btn2"><a href="compiledAgriculturePanelData.php">প্যানেল ডেটা</button> -->
+<button class="btn btn2"><a href="/showBoroChashi">বড় চাষীর তালিকা</button>
+<!-- <button class="btn btn2"><a href="/compiledMajhariChashi.php">মাঝারি চাষীর তালিকা</button> -->
+<button class="btn btn2"><a href="/showChotoChashi">ছোট চাষীর তালিকা</button>
+<button class="btn btn2"><a href="/showBorgaChashi">বর্গাচাষীর তালিকা</button>
+<button class="btn btn2"><a href="/showMap">Show Hit Map</button>
 
 </body>
 </html>
