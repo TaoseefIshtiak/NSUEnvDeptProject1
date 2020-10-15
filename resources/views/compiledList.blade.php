@@ -51,7 +51,8 @@
   
  </tr>
  <?php
-$conn = mysqli_connect("localhost", "root", "", "farmersdatalogger");
+    $conn = mysqli_connect("localhost", "root", "taoseefhere", "drmdjakariyaresearchlabnsu");
+
   // Check connection
   mysqli_set_charset($conn, 'utf8');
   if($conn->connect_error) {
