@@ -10,7 +10,7 @@
         <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
 
-        <script src="node_modules/table2excel/dist/table2excel.js"></script>
+        <script type="text/javascript" src="{{ URL::asset('js/table2excel.js') }}"></script>
     </head>
 
     <body>
@@ -79,7 +79,7 @@
             <button class="btn btn1" id="damageInfoXLSX">Export Damage Info to XLSX</button>
 
         </div>
-        <script src="firebase.js"></script>
+         <script type="text/javascript" src="{{ URL::asset('js/firebase.js') }}"></script>
         <script>
             $("#userInfoXLSX").click(function(e){
                 let table2excel = new Table2Excel();
