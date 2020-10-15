@@ -81,12 +81,12 @@
 
         var maker, i;
         var image = {
-            url : 'C:/xampp/htdocs/envdeptDataLogger/resources/views/farmer.jpg',
+            url : 'https://i.ibb.co/qk1KTPs/farmer.jpg',
             scaledSize: new google.maps.Size(50, 50)
         }
 
         var image2 = {
-            url : 'C:/xampp/htdocs/envdeptDataLogger/resources/views/farmer.jpg',
+            url : 'https://i.ibb.co/qk1KTPs/farmer.jpg',
             scaledSize: new google.maps.Size(50, 50)
         }
 
