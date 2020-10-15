@@ -35,6 +35,9 @@ class ArticleController extends Controller
     {
         return view('hitMap');
     }
-
+    public function showFloodVuln()
+    {
+        return view('floodWeb/public/floodRelatedPanelData');
+    }
 
 }

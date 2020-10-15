@@ -21,3 +21,5 @@ Route::get('/showBoroChashi', 'ArticleController@boroChashi');
 Route::get('/showBorgaChashi', 'ArticleController@borgaChashi');
 Route::get('/showChotoChashi', 'ArticleController@chotoChashi');
 Route::get('/showMap', 'ArticleController@showMap');
+Route::get('/showFloodVuln', 'ArticleController@showFloodVuln');
+

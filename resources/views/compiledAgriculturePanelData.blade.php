@@ -208,6 +208,7 @@
 <!-- <button class="btn btn2"><a href="/compiledMajhariChashi.php">মাঝারি চাষীর তালিকা</button> -->
 <button class="btn btn2"><a href="/showChotoChashi">ছোট চাষীর তালিকা</button>
 <button class="btn btn2"><a href="/showBorgaChashi">বর্গাচাষীর তালিকা</button>
+<button class="btn btn2"><a href="/showFloodVuln">বন্যায় আক্রান্ত প্যানেল ডেটা</button>
 <button class="btn btn2"><a href="/showMap">Show Hit Map</button>
 
 </body>
