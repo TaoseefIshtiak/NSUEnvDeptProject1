@@ -16,10 +16,10 @@ Route::get('/', function () {
 });
 
 Route::get('/showAgriculturePanelData', 'ArticleController@index');
-Route::get('/showKrishiJomi', 'ArticleController@krishiJomi');
-Route::get('/showBoroChashi', 'ArticleController@boroChashi');
-Route::get('/showBorgaChashi', 'ArticleController@borgaChashi');
-Route::get('/showChotoChashi', 'ArticleController@chotoChashi');
+Route::get('/showKrishiJomi', 'ArticleController@showKrishiJomi');
+Route::get('/showBoroChashi', 'ArticleController@showBoroChashi');
+Route::get('/showBorgaChashi', 'ArticleController@showBorgaChashi');
+Route::get('/showChotoChashi', 'ArticleController@showChotoChashi');
 Route::get('/showMap', 'ArticleController@showMap');
 Route::get('/showFloodVuln', 'ArticleController@showFloodVuln');
 
