@@ -73,7 +73,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mAuth = FirebaseAuth.getInstance();
-        phone_number = mAuth.getCurrentUser().getPhoneNumber();
+        //phone_number = mAuth.getCurrentUser().getPhoneNumber();
+        phone_number = "01751651320";
         checkForPhoneNumber(phone_number);
 
         profileName =findViewById(R.id.profileName);
@@ -334,7 +335,7 @@ public class MainActivity extends AppCompatActivity {
         req.put("mashik_bey", mashik_bey.getText().toString());
         req.put("krishijomi_ache_kina", krishijomi_ache_kina.getText().toString());
 
-        client.post("http://192.168.0.103/envdeptDataLogger/public/api/articles", req, new AsyncHttpResponseHandler() {
+        client.post("http://www.drmdjakariyaresearchlabnsu.com/api/articles", req, new AsyncHttpResponseHandler() {
 
             @Override
             public void onStart() {
