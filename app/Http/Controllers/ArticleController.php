@@ -41,7 +41,7 @@ class ArticleController extends Controller
     }
     public function showAgriVuln()
     {
-        return view('compiledAgriVuln.blade.php');
+        return view('compiledAgriVuln');
     }
 
 }
