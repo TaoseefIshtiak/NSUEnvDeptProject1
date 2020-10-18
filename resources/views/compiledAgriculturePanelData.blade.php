@@ -209,6 +209,7 @@
 <button class="btn btn2"><a href="{{url('/showChotoChashi')}}">ছোট চাষীর তালিকা</button>
 <button class="btn btn2"><a href="{{url('/showBorgaChashi')}}">বর্গাচাষীর তালিকা</button>
 <button class="btn btn2"><a href="{{url('/showFloodVuln')}}">বন্যায় আক্রান্ত প্যানেল ডেটা</button>
+<button class="btn btn2"><a href="{{url('/showAgriVuln')}}">vulnerability score</button>
 <button class="btn btn2"><a href="{{url('/showMap')}}">Show Hit Map</button>
 
 </body>
