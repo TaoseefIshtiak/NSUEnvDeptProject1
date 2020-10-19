@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>বন্যায় দুর্গতদের ক্ষয়ক্ষতি সম্পর্কিত তথ্য</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/style.css">
     <script src="bower_components\jquery\dist\jquery.min.js"></script>
     <script src="bower_components\jquery-table2excel\dist\jquery.table2excel.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
