@@ -197,7 +197,7 @@
 
     });
 </script>
-<button class="btn btn2"><a href="{{url('/showKrishiJomi')}}">ি আছে কয়জনের</button>
+<button class="btn btn2"><a href="{{url('/showKrishiJomi')}}">কৃষি জমি আছে কয়জনের</button>
 <!-- <button class="btn btn2"><a href="compiledHash.php">হাঁস পালন করে কয়জন</button>
 <button class="btn btn2"><a href="compiledMurgi.php">মুরগি পালন করে কয়জন</button>
 <button class="btn btn2"><a href="compiledGoru.php">গরু পালন করে কয়জন</button>
