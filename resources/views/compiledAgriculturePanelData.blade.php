@@ -3,12 +3,13 @@
 <head>
     <meta charset="utf-8">
     <title>বন্যায় দুর্গতদের ক্ষয়ক্ষতি সম্পর্কিত তথ্য</title>
-    <link rel="stylesheet" href="/var/www/envdeptDataLogger/resources/views/style.css">
+    <link rel="stylesheet" href="/var/www/html/resources/views/style.css">
     <script src="bower_components\jquery\dist\jquery.min.js"></script>
     <script src="bower_components\jquery-table2excel\dist\jquery.table2excel.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="//cdn.rawgit.com/rainabba/jquery-table2excel/1.1.0/dist/jquery.table2excel.min.js"></script>
     <style>
+
         table {
             border-collapse: collapse;
             width: 100%;
