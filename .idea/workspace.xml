@@ -11,11 +11,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11fc66de-5678-4aaf-920c-41e6da9672fd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/render.experimental.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/envdeptDataLogger.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/envdeptDataLogger.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/floodrelateddataloggernsuenvdept/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/floodrelateddataloggernsuenvdept/LoginActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/floodrelateddataloggernsuenvdept/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/floodrelateddataloggernsuenvdept/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +136,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AndroidPhoneSensorDataCollector/SensorApp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -257,6 +258,7 @@
       <workItem from="1596070723625" duration="18000" />
       <workItem from="1596070964411" duration="43000" />
       <workItem from="1602790811241" duration="1436000" />
+      <workItem from="1603447786960" duration="2495000" />
     </task>
     <servers />
   </component>
@@ -280,9 +282,9 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="498" y="139" key="FileChooserDialogImpl" timestamp="1602792527572">
+    <state x="498" y="139" key="FileChooserDialogImpl" timestamp="1603175190393">
       <screen x="71" y="0" width="1295" height="768" />
     </state>
-    <state x="498" y="139" key="FileChooserDialogImpl/71.0.1295.768@71.0.1295.768" timestamp="1602792527572" />
+    <state x="498" y="139" key="FileChooserDialogImpl/71.0.1295.768@71.0.1295.768" timestamp="1603175190393" />
   </component>
 </project>

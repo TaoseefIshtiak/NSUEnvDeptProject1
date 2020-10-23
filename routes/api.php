@@ -28,6 +28,7 @@ Route::get('articles/{id}', function($id) {
 
 Route::post('articles', function(Request $request) {
     $artcile = new Article();
+    $artcile->nam = $request->nam;
     $artcile->mashik_bey = $request->mashik_bey;
     $artcile->mashik_ay = $request->mashik_ay ;
     $artcile->krishijomi_ache_kina = $request->krishijomi_ache_kina;
@@ -56,6 +57,12 @@ Route::post('articles', function(Request $request) {
     $artcile->shohayotar_dhoron = $request->shohayotar_dhoron;
     $artcile->kar_kach_theke_asha_koren = $request->kar_kach_theke_asha_koren;
     $artcile->onnanno_ki_dhoroner_shoyayota = $request->onnanno_ki_dhoroner_shoyayota;
+    $artcile->bijer_poriman = $request->bijer_poriman;
+    $artcile->mp_poriman = $request->mp_poriman;
+    $artcile->tsp_poriman = $request->tsp_poriman;
+    $artcile->uria_poriman = $request->uria_poriman;
+    $artcile->dap_poriman = $request->dap_poriman;
+    $artcile->kitnashok_poriman = $request->kitnashok_poriman;
     $artcile->save();
     return "success";
 });
