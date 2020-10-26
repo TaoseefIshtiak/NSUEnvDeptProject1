@@ -43,5 +43,9 @@ class ArticleController extends Controller
     {
         return view('compiledAgriVuln');
     }
+    public function showUsageSummary()
+    {
+        return view('compiledFertilizer');
+    }
 
 }

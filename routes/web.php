@@ -23,4 +23,6 @@ Route::get('/showChotoChashi', 'ArticleController@showChotoChashi');
 Route::get('/showMap', 'ArticleController@showMap');
 Route::get('/showFloodVuln', 'ArticleController@showFloodVuln');
 Route::get('/showAgriVuln', 'ArticleController@showAgriVuln');
+Route::get('/showUsageSummary', 'ArticleController@showUsageSummary');
+
 

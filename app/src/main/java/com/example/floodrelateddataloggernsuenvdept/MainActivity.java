@@ -338,9 +338,9 @@ public class MainActivity extends AppCompatActivity {
         req.put("krishi_jomir_ki_dhoroner_khoti", Krishi_Jomi_Khoti.getText().toString());
         req.put("fosholer_khoti", Foshol_.getText().toString());
         req.put("shohayotar_dhoron", EMuhurte_Shahajjo.getText().toString());
-        req.put("Sohayotar_Dhoron", Sohayotar_Dhoron.getText().toString());
-        req.put("Onudan_Asha", Onudan_Asha.getText().toString());
-        req.put("onnanno_khotir_dhoron", Onnannohole_.getText().toString());
+        //req.put("Sohayotar_Dhoron", Sohayotar_Dhoron.getText().toString());
+        //req.put("Onudan_Asha", Onudan_Asha.getText().toString());
+        req.put("onnanno_ki_dhoroner_shoyayota", Onnannohole_.getText().toString());
         req.put("pukure_mach_chash_kore_kina", Pukure_Mach_Chash_Kore_Kina.getText().toString());
         req.put("bijer_poriman", bijer_poriman.getText().toString());
         req.put("mp_poriman", mp_poriman.getText().toString());
@@ -350,9 +350,11 @@ public class MainActivity extends AppCompatActivity {
         req.put("kitnashok_poriman", kitnashok_poriman.getText().toString());
 
 
-        client.post("http://www.drmdjakariyaresearchlabnsu.com/api/articles", req, new AsyncHttpResponseHandler() {
+        //client.post("http://www.drmdjakariyaresearchlabnsu.com/api/articles", req, new AsyncHttpResponseHandler() {
+        client.post("http://192.168.0.107/envdeptDataLogger/public/api/articles", req, new AsyncHttpResponseHandler() {
 
-            @Override
+
+                    @Override
             public void onStart() {
 
                 bar.show();
