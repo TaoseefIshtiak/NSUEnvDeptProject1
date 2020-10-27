@@ -350,8 +350,8 @@ public class MainActivity extends AppCompatActivity {
         req.put("kitnashok_poriman", kitnashok_poriman.getText().toString());
 
 
-        //client.post("http://www.drmdjakariyaresearchlabnsu.com/api/articles", req, new AsyncHttpResponseHandler() {
-        client.post("http://192.168.0.107/envdeptDataLogger/public/api/articles", req, new AsyncHttpResponseHandler() {
+        client.post("http://www.drmdjakariyaresearchlabnsu.com/api/articles", req, new AsyncHttpResponseHandler() {
+        //client.post("http://192.168.0.107/envdeptDataLogger/public/api/articles", req, new AsyncHttpResponseHandler() {
 
 
                     @Override
