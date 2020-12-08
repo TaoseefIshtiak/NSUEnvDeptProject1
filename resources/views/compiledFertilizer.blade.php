@@ -47,32 +47,14 @@
 <body>
  <table class="table2excel" data-tableName="Test Table 1">
  <tr>
-  <th>বর্গাচাষীর তালিকা</th>
+  <th>id</th> 
   <th>নাম</th> 
-  <th>সময়কাল</th> 
-  <th>মোট জমির পরিমাণ</th> 
-  <th>চাষক্রত জমির পরিমাণ </th>
-  <th>পতিত জমির পরিমাণ </th>
-  <th>মৌসুমে কতবার বীজ ক্রয় </th>
-  <th>একাধিকবার বীজক্রয়ে কারণ</th>
-  <th>বীজের পিছনে খরচ </th>
-  <th>ইউরিয়া সারের পিছনে খরচ</th>
-  <th>টি এস পি সারের পিছনে খরচ</th>
-  <th>এম্পি সারের পিছনে খরচ</th>
-  <th>ডি এ পি সারের পিছনে খরচ</th>  
-  <th>কীটনাশকের পিছনে খরচ</th>
-  <th>সেচ সুবিধা পায় কিনা</th>
-  <th>কীটনাশকের পরিমাণ সারের পরিমাণ</th>
-  <th>সেচ বাবদ খরচ</th>
-  <th>নিজস্ব যন্ত্রপাতি আছে কিনা?</th>
-  <th>চাষাবাদ বাবদ খরচ</th>
-  <th>ধানের চারা লাগানো বাবদ খরচ</th>
-  <th>ধান মাড়াই লাগানো বাবদ খরচ</th>
-  <th>মোট উৎপাদিত ধানের পরিমান</th>
-  <th>মোট ধান বিক্রি বাবদ প্রাপ্ত টাকা</th>
-  <th>মোট আয়</th>
-  <th>নীট মুনাফা</th>
-  <th>বি, সি, আর</th>
+  <th>বীজের পরিমাণ</th> 
+  <th>এম পি সারের পরিমাণ </th>
+  <th>টিএসপি সারের পরিমাণ</th>
+  <th>ইউরিয়া সারের পরিমাণ </th>
+  <th>ডিএপি সারের পরিমাণ</th>
+  <th>কীটনাশকের পরিমাণ</th>
  </tr>
  <?php
     $conn = mysqli_connect("localhost", "root", "Mashnoor11", "drmdjakariyaresearchlabnsu");
@@ -82,39 +64,19 @@
   if($conn->connect_error) {
    die("Connection failed: " . $conn->connect_error);
   } 
-  $sql = "SELECT id FROM articles WHERE chashir_dhoron ='বর্গাচাষী'";
+  $sql = "SELECT  id, nam, bijer_poriman, mp_poriman, tsp_poriman, uria_poriman,   dap_poriman, kitnashok_poriman FROM articles WHERE id IS NOT NULL";
   $result = $conn->query($sql);
   if ($result->num_rows > 0) {
    // output data of each row
    while($row = $result->fetch_assoc()) {
-    echo "<tr>
-    <td>" . $row["id"] . "</td>
-    <td>" . "আতাউর" . "</td>
-    <td>" . "আমন" . "</td>
-    <td>" . 10 . "</td>
-    <td>" . 10 . "</td>
-    <td>" . 10 . "</td>
-    <td>" . 2 . "</td>
-    <td>" . "জলাবদ্ধতা" . "</td>
-    <td>" . 20 . "</td>
-    <td>" . 20 . "</td>
-    <td>" . 20 . "</td>
-    <td>" . 20 . "</td>
-    <td>" . 20 . "</td>
-    <td>" . 20 . "</td>
-    <td>" . "হ্যা" . "</td>
-    <td>" . $row["id"] . "</td>
-    <td>" . 20 . "</td>
-    <td>" . "হ্যা" . "</td>
-    <td>" . 20 . "</td>
-    <td>" . 20 . "</td>
-    <td>" . 20 . "</td>
-    <td>" . 100 . "</td>
-    <td>" . 3 . "</td>
-    <td>" . 300 . "</td>
-    <td>" . 100 . "</td>
-    <td>" . "***" . "</td>
-    </tr>";
+    echo "<tr><td>" . $row["id"]. "</td>
+<td>" . $row["nam"] . "</td>
+<td>" . $row["bijer_poriman"]. "</td>
+<td>" . $row["mp_poriman"] . "</td>
+<td>". $row["tsp_poriman"]. "</td>
+<td>" . $row["uria_poriman"] . "</td>
+<td>" . $row["dap_poriman"] . "</td>
+<td>" . $row["kitnashok_poriman"] . "</td></tr>";
 }
 echo "</table>";
 } else { echo "0 results"; }

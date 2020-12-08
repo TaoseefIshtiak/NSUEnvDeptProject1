@@ -112,6 +112,21 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/textView_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="পূর্ণ নাম"/>
+
+                    <EditText
+                        android:id="@+id/input_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="text"
+                        android:imeOptions="actionDone"
+                        android:text="" />
+
+                    <TextView
                         android:id="@+id/textView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -885,8 +900,93 @@
                             android:text="অন্যন্য" />
 
                     </RadioGroup>
+                    <TextView
+                        android:id="@+id/textView_bijer_poriman"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="বীজের পরিমাণ (কেজি)" />
+
+                    <EditText
+                        android:id="@+id/input_bijer_poriman"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:imeOptions="actionDone"
+                        android:text="" />
+                    <TextView
+                        android:id="@+id/textView_mp_poriman"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="এম পি পরিমাণ (কেজি)" />
+
+                    <EditText
+                        android:id="@+id/input_mp_poriman"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:imeOptions="actionDone"
+                        android:text="" />
+                    <TextView
+                        android:id="@+id/textView_tsp_poriman"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="টি আস পি পরিমাণ (কেজি)" />
+
+                    <EditText
+                        android:id="@+id/input_tsp_poriman"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:imeOptions="actionDone"
+                        android:text="" />
+                    <TextView
+                        android:id="@+id/textView_uria_poriman"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ইউরিয়া পরিমাণ (কেজি)" />
+
+                    <EditText
+                        android:id="@+id/input_uria_poriman"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:imeOptions="actionDone"
+                        android:text="" />
+                    <TextView
+                        android:id="@+id/textView_dap_poriman"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ডি এ পি পরিমাণ (কেজি)" />
+
+                    <EditText
+                        android:id="@+id/input_dap_poriman"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:imeOptions="actionDone"
+                        android:text="" />
+                    <TextView
+                        android:id="@+id/textView_kitnashok_poriman"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="কীটনাশক পরিমাণ (কেজি)" />
+
+                    <EditText
+                        android:id="@+id/input_kitnashok_poriman"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:imeOptions="actionDone"
+                        android:text="" />
 
                 </LinearLayout>
+
 
             </android.support.v7.widget.CardView>
 

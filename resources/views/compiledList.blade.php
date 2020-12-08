@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
  <title>বন্যায় দুর্গতদের ক্ষয়ক্ষতি সম্পর্কিত তথ্য</title>
- <link rel="stylesheet" href="style.css">s
+ <link rel="stylesheet" href="{{ URL::asset('css/style.css') }}">
  <script src="bower_components\jquery\dist\jquery.min.js"></script>
  <script src="bower_components\jquery-table2excel\dist\jquery.table2excel.min.js"></script>
  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -51,7 +51,7 @@
   
  </tr>
  <?php
-    $conn = mysqli_connect("localhost", "root", "taoseefhere", "drmdjakariyaresearchlabnsu");
+    $conn = mysqli_connect("localhost", "root", "Mashnoor11", "drmdjakariyaresearchlabnsu");
 
   // Check connection
   mysqli_set_charset($conn, 'utf8');

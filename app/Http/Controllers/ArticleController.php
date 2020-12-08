@@ -39,5 +39,13 @@ class ArticleController extends Controller
     {
         return view('floodWeb/public/floodRelatedPanelData');
     }
+    public function showAgriVuln()
+    {
+        return view('compiledAgriVuln');
+    }
+    public function showUsageSummary()
+    {
+        return view('compiledFertilizer');
+    }
 
 }

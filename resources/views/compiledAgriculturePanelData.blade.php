@@ -3,12 +3,13 @@
 <head>
     <meta charset="utf-8">
     <title>বন্যায় দুর্গতদের ক্ষয়ক্ষতি সম্পর্কিত তথ্য</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ URL::asset('css/style.css') }}">
     <script src="bower_components\jquery\dist\jquery.min.js"></script>
     <script src="bower_components\jquery-table2excel\dist\jquery.table2excel.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="//cdn.rawgit.com/rainabba/jquery-table2excel/1.1.0/dist/jquery.table2excel.min.js"></script>
     <style>
+
         table {
             border-collapse: collapse;
             width: 100%;
@@ -89,7 +90,7 @@
 
     </tr>
     <?php
-    $conn = mysqli_connect("localhost", "root", "taoseefhere", "drmdjakariyaresearchlabnsu");
+    $conn = mysqli_connect("localhost", "root", "Mashnoor11", "drmdjakariyaresearchlabnsu");
     //$int = (int)$num;
 
     // Check connection
@@ -98,7 +99,8 @@
         die("Connection failed: " . $conn->connect_error);
     }
     $sql = "SELECT
-  id
+  id,
+  nam,
   mashik_bey,
   mashik_ay,
   krishijomi_ache_kina,
@@ -197,7 +199,7 @@
 
     });
 </script>
-<button class="btn btn2"><a href="{{url('/showKrishiJomi')}}">ি আছে কয়জনের</button>
+<button class="btn btn2"><a href="{{url('/showKrishiJomi')}}">কৃষি জমি আছে কয়জনের</button>
 <!-- <button class="btn btn2"><a href="compiledHash.php">হাঁস পালন করে কয়জন</button>
 <button class="btn btn2"><a href="compiledMurgi.php">মুরগি পালন করে কয়জন</button>
 <button class="btn btn2"><a href="compiledGoru.php">গরু পালন করে কয়জন</button>
@@ -209,6 +211,8 @@
 <button class="btn btn2"><a href="{{url('/showChotoChashi')}}">ছোট চাষীর তালিকা</button>
 <button class="btn btn2"><a href="{{url('/showBorgaChashi')}}">বর্গাচাষীর তালিকা</button>
 <button class="btn btn2"><a href="{{url('/showFloodVuln')}}">বন্যায় আক্রান্ত প্যানেল ডেটা</button>
+<button class="btn btn2"><a href="{{url('/showAgriVuln')}}">vulnerability score</button>
+<button class="btn btn2"><a href="{{url('/showUsageSummary')}}">Usage Summary</button>
 <button class="btn btn2"><a href="{{url('/showMap')}}">Show Hit Map</button>
 
 </body>

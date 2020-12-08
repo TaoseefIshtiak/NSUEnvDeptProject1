@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
     EditText mashik_bey, mashik_ay, krishijomi_promian, gobadi_poshu_songkha_hash, gobadi_poshu_songkha_murgi, gobadi_poshu_songkha_goru, gobadi_poshu_songkha_chagol, mach_theke_bochore_koto_ay_kore,
     boshot_bari_khoy_khotir_poriman, krishi_jomir_ki_poriman_khoti_takay, fosholer_khotir_poriman_takay, pukure_macher_khotir_poriman_takay,
-            onnanno_khotir_dhoron, onnanno_khotir_poriman_takay, arthik_koto_taka;
+            onnanno_khotir_dhoron, onnanno_khotir_poriman_takay, arthik_koto_taka,bijer_poriman, mp_poriman, tsp_poriman, uria_poriman, dap_poriman, kitnashok_poriman, nam;
     private RadioGroup radioKrishiJomiAcheKina, radioKrishiJomiPoriman, radioBoshotVitarDhoron, radioPukureMachChashKoreKina,
             radioBoshotBarirKhoti, radioKrishiJomiKhoti, radioFoshol, radioPukurerMach, radioEMuhurteShahajjo, radioSohayotarDhoron,
             radioOnudanAsha, radioOnnannohole;
@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
 
         profilePhone = findViewById(R.id.profilePhone);
         profilePhone.setText(phone_number);
-
+        nam = findViewById(R.id.input_name);
         mashik_bey = findViewById(R.id.input1);
         mashik_ay = findViewById(R.id.input2);
         krishijomi_promian = findViewById(R.id.input3);
@@ -111,6 +111,15 @@ public class MainActivity extends AppCompatActivity {
         onnanno_khotir_dhoron = findViewById(R.id.input13);
         onnanno_khotir_poriman_takay = findViewById(R.id.input14);
         arthik_koto_taka = findViewById(R.id.input15);
+        bijer_poriman = findViewById(R.id.input_bijer_poriman);
+        mp_poriman = findViewById(R.id.input_mp_poriman);
+        tsp_poriman = findViewById(R.id.input_tsp_poriman);
+        uria_poriman = findViewById(R.id.input_uria_poriman);
+        dap_poriman = findViewById(R.id.input_dap_poriman);
+        kitnashok_poriman = findViewById(R.id.input_kitnashok_poriman);
+
+
+
 
         //radio button inputs
         radioKrishiJomiAcheKina = (RadioGroup) findViewById(R.id.radioKrishiJomiAcheKina);
@@ -304,12 +313,12 @@ public class MainActivity extends AppCompatActivity {
 
         AsyncHttpClient client = new AsyncHttpClient();
         RequestParams req = new RequestParams();
+        req.put("nam", nam.getText());
         req.put("mashik_bey", mashik_bey.getText().toString());
         req.put("mashik_ay", mashik_ay.getText().toString());
 
         //req.put("krishijomi_promian", krishijomi_promian.getText().toString());
-        req.put("krishijomi_promian", spinnerKrishiJomiPoriman.getSelectedItem().toString());
-
+        req.put("krishijomi_promian_unit", spinnerKrishiJomiPoriman.getSelectedItem().toString());
         req.put("krishijomi_promian", krishijomi_promian.getText().toString());
         req.put("gobadi_poshu_songkha_hash", gobadi_poshu_songkha_hash.getText().toString());
         req.put("gobadi_poshu_songkha_murgi", gobadi_poshu_songkha_murgi.getText().toString());
@@ -322,22 +331,37 @@ public class MainActivity extends AppCompatActivity {
         req.put("pukure_macher_khotir_poriman_takay", pukure_macher_khotir_poriman_takay.getText().toString());
         req.put("onnanno_khotir_dhoron", onnanno_khotir_dhoron.getText().toString());
         req.put("onnanno_khotir_poriman_takay", onnanno_khotir_poriman_takay.getText().toString());
-        req.put("arthik_koto_taka", mashik_bey.getText().toString());
-        req.put("mashik_bey", mashik_bey.getText().toString());
-        req.put("mashik_bey", mashik_bey.getText().toString());
-        req.put("mashik_bey", mashik_bey.getText().toString());
-        req.put("mashik_bey", mashik_bey.getText().toString());
-        req.put("mashik_bey", mashik_bey.getText().toString());
-        req.put("mashik_bey", mashik_bey.getText().toString());
-        req.put("mashik_bey", mashik_bey.getText().toString());
-        req.put("mashik_bey", mashik_bey.getText().toString());
-        req.put("mashik_bey", mashik_bey.getText().toString());
-        req.put("mashik_bey", mashik_bey.getText().toString());
+        req.put("arthik_koto_taka", arthik_koto_taka.getText().toString());
         req.put("krishijomi_ache_kina", krishijomi_ache_kina.getText().toString());
+<<<<<<< HEAD
 
         client.post("http://www.drmdjakariyaresearchlabnsu.com/api/articles", req, new AsyncHttpResponseHandler() {
 
             @Override
+=======
+        req.put("boshot_bhitar_dhoron", Boshot_Vitar_Dhoron.getText().toString());
+        req.put("boshot_bari_khoy_khoti_yesorno", Boshot_Barir_Khoti.getText().toString());
+        req.put("krishi_jomir_ki_dhoroner_khoti", Krishi_Jomi_Khoti.getText().toString());
+        req.put("fosholer_khoti", Foshol_.getText().toString());
+        req.put("shohayotar_dhoron", EMuhurte_Shahajjo.getText().toString());
+        //req.put("Sohayotar_Dhoron", Sohayotar_Dhoron.getText().toString());
+        //req.put("Onudan_Asha", Onudan_Asha.getText().toString());
+        req.put("onnanno_ki_dhoroner_shoyayota", Onnannohole_.getText().toString());
+        req.put("pukure_mach_chash_kore_kina", Pukure_Mach_Chash_Kore_Kina.getText().toString());
+        req.put("bijer_poriman", bijer_poriman.getText().toString());
+        req.put("mp_poriman", mp_poriman.getText().toString());
+        req.put("tsp_poriman", tsp_poriman.getText().toString());
+        req.put("uria_poriman", uria_poriman.getText().toString());
+        req.put("dap_poriman", dap_poriman.getText().toString());
+        req.put("kitnashok_poriman", kitnashok_poriman.getText().toString());
+
+
+        client.post("http://www.drmdjakariyaresearchlabnsu.com/api/articles", req, new AsyncHttpResponseHandler() {
+        //client.post("http://192.168.0.107/envdeptDataLogger/public/api/articles", req, new AsyncHttpResponseHandler() {
+
+
+                    @Override
+>>>>>>> 1ad8f054de9845fac69601abdfa4c279e9d7a9ff
             public void onStart() {
 
                 bar.show();
