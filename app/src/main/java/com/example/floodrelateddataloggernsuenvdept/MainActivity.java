@@ -333,6 +333,12 @@ public class MainActivity extends AppCompatActivity {
         req.put("onnanno_khotir_poriman_takay", onnanno_khotir_poriman_takay.getText().toString());
         req.put("arthik_koto_taka", arthik_koto_taka.getText().toString());
         req.put("krishijomi_ache_kina", krishijomi_ache_kina.getText().toString());
+<<<<<<< HEAD
+
+        client.post("http://www.drmdjakariyaresearchlabnsu.com/api/articles", req, new AsyncHttpResponseHandler() {
+
+            @Override
+=======
         req.put("boshot_bhitar_dhoron", Boshot_Vitar_Dhoron.getText().toString());
         req.put("boshot_bari_khoy_khoti_yesorno", Boshot_Barir_Khoti.getText().toString());
         req.put("krishi_jomir_ki_dhoroner_khoti", Krishi_Jomi_Khoti.getText().toString());
@@ -355,6 +361,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                     @Override
+>>>>>>> 1ad8f054de9845fac69601abdfa4c279e9d7a9ff
             public void onStart() {
 
                 bar.show();
