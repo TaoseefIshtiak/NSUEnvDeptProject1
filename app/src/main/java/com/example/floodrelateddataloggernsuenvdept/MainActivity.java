@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
         //phone_number = mAuth.getCurrentUser().getPhoneNumber();
-        phone_number = "01751651320";
+        phone_number = "01713043076";
         checkForPhoneNumber(phone_number);
 
         profileName =findViewById(R.id.profileName);
