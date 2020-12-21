@@ -27,24 +27,6 @@ Route::get('articles/{id}', function($id) {
 });
 
 Route::post('articles', function(Request $request) {
-<<<<<<< HEAD
-    $article = new Article();
-    $article->accelerometer_x = $request->accelerometer_x;
-    $article->accelerometer_y = $request->accelerometer_y ;
-    $article->accelerometer_z = $request->accelerometer_z;
-    $article->gyroscope_x = $request->gyroscope_x;
-    $article->gyroscope_y = $request->gyroscope_y;
-    $article->gyroscope_z = $request->gyroscope_z;
-    $article->magnetometer_x = $request->magnetometer_x;
-    $article->magnetometer_y = $request->magnetometer_y;
-    $article->magnetometer_z = $request->magnetometer_z;
-    $article->ligt_sensor = $request->ligt_sensor;
-    $article->gravity_x = $request->gravity_x;
-    $article->gravity_y = $request->gravity_y;
-    $article->gravity_z = $request->gravity_z;
-    $article->label = $request->label;
-    $article->save();
-=======
     $artcile = new Article();
     $artcile->nam = $request->nam;
     $artcile->mashik_bey = $request->mashik_bey;
@@ -82,6 +64,5 @@ Route::post('articles', function(Request $request) {
     $artcile->dap_poriman = $request->dap_poriman;
     $artcile->kitnashok_poriman = $request->kitnashok_poriman;
     $artcile->save();
->>>>>>> 1ad8f054de9845fac69601abdfa4c279e9d7a9ff
     return "success";
 });
