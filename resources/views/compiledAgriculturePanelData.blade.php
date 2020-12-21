@@ -90,7 +90,7 @@
 
     </tr>
     <?php
-    $conn = mysqli_connect("localhost", "root", "Mashnoor11", "drmdjakariyaresearchlabnsu");
+    $conn = mysqli_connect("localhost", "evidentbd", "EvidentBD@69#", "drmdjakariyaresearchlabnsu");
     //$int = (int)$num;
 
     // Check connection

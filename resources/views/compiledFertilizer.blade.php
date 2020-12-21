@@ -57,7 +57,7 @@
   <th>কীটনাশকের পরিমাণ</th>
  </tr>
  <?php
-    $conn = mysqli_connect("localhost", "root", "Mashnoor11", "drmdjakariyaresearchlabnsu");
+    $conn = mysqli_connect("localhost", "evidentbd", "EvidentBD@69#", "drmdjakariyaresearchlabnsu");
 
   // Check connection
   mysqli_set_charset($conn, 'utf8');
