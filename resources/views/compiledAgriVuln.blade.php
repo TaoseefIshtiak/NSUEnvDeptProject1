@@ -61,9 +61,9 @@
     
    
 <tr><td>রাসেল</td>
-<td>1.75</td></tr>
+<td>0.75</td></tr>
 <tr><td>সুলেমান</td>
-<td>2.75</td></tr>
+<td>0.63</td></tr>
 
 </table>
 
@@ -90,7 +90,7 @@
 
     });
 </script>
-<button class="btn btn2"><a href="{{url('/showKrishiJomi')}}">ি আছে কয়জনের</button>
+<button class="btn btn2"><a href="{{url('/showKrishiJomi')}}">কৃষি জমি আছে কয়জনের</button>
 <!-- <button class="btn btn2"><a href="compiledHash.php">হাঁস পালন করে কয়জন</button>
 <button class="btn btn2"><a href="compiledMurgi.php">মুরগি পালন করে কয়জন</button>
 <button class="btn btn2"><a href="compiledGoru.php">গরু পালন করে কয়জন</button>
