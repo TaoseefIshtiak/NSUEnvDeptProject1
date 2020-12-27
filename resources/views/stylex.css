@@ -1,0 +1,23 @@
+
+.error{
+  color: red;
+}
+
+
+body {
+  background-color: #BEFFF8;
+  color: #000000;
+  font: normal 17px Arial, Helvetica, sans-serif;
+  line-height: 1.6em;
+  margin: 20;
+}
+
+h1{
+  color: orange;
+}
+.stylex {
+  width: 75%;
+  margin: auto;
+  padding: 25px;
+  border: 5px black solid;
+}

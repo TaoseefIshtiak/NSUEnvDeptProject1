@@ -24,5 +24,7 @@ Route::get('/showMap', 'ArticleController@showMap');
 Route::get('/showFloodVuln', 'ArticleController@showFloodVuln');
 Route::get('/showAgriVuln', 'ArticleController@showAgriVuln');
 Route::get('/showUsageSummary', 'ArticleController@showUsageSummary');
+Route::get('/sanitationSystem', 'ArticleController@sanitationSystem');
+Route::get('/showSanitationData', 'ArticleController@showSanitationData');
 
 

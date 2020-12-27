@@ -47,5 +47,13 @@ class ArticleController extends Controller
     {
         return view('compiledFertilizer');
     }
+    public function sanitationSystem()
+    {
+        return view('sanitationSystem');
+    }
+    public function showSanitationData()
+    {
+        return view('showSanitationData');
+    }
 
 }
