@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>বন্যায় দুর্গতদের ক্ষয়ক্ষতি সম্পর্কিত তথ্য</title>
+    <title>Sanitation Sytem All Data Projection</title>
     <link rel="stylesheet" href="{{ URL::asset('css/style.css') }}">
     <script src="bower_components\jquery\dist\jquery.min.js"></script>
     <script src="bower_components\jquery-table2excel\dist\jquery.table2excel.min.js"></script>
@@ -55,15 +55,24 @@
 <body>
 <table class="table2excel" data-tableName="Test Table 1">
     <tr>
-        <th>নাম</th>
-        <th>ভালনারেবিলিটি স্কোর</th>
+        <th>Address</th>
+        <th>Head of the Family</th>
+        <th>Number of Family Members</th>
+        <th>Ages</th>
+        <th>Tank ID</th>
     </tr>
     
    
-<tr><td>রাসেল</td>
-<td>0.75</td></tr>
-<tr><td>সুলেমান</td>
-<td>0.63</td></tr>
+<tr><td>6, Paschimgaon</td>
+<td>Rasel Ahmed</td>
+<td>3</td>
+<td>35, 33, 10,</td>
+<td>ST15231</td></tr>
+<tr><td>9, Paschimgaon</td>
+<td>Bilal</td>
+<td>5</td>
+<td>53, 49, 19, 15, 7</td>
+<td>ST15232</td></tr>
 
 </table>
 
@@ -90,19 +99,8 @@
 
     });
 </script>
-<button class="btn btn2"><a href="{{url('/showKrishiJomi')}}">কৃষি জমি আছে কয়জনের</button>
-<!-- <button class="btn btn2"><a href="compiledHash.php">হাঁস পালন করে কয়জন</button>
-<button class="btn btn2"><a href="compiledMurgi.php">মুরগি পালন করে কয়জন</button>
-<button class="btn btn2"><a href="compiledGoru.php">গরু পালন করে কয়জন</button>
-<button class="btn btn2"><a href="compiledChagol.php">ছাগল পালন করে কয়জন</button>
-<button class="btn btn2"><a href="compiledPukur.php">পুকুর আছে কয়জনের</button>
-<button class="btn btn2"><a href="compiledAgriculturePanelData.php">প্যানেল ডেটা</button> -->
-<button class="btn btn2"><a href="{{url('/showBoroChashi')}}">বড় চাষীর তালিকা</button>
-<!-- <button class="btn btn2"><a href="/compiledMajhariChashi.php">মাঝারি চাষীর তালিকা</button> -->
-<button class="btn btn2"><a href="{{url('/showChotoChashi')}}">ছোট চাষীর তালিকা</button>
-<button class="btn btn2"><a href="{{url('/showBorgaChashi')}}">বর্গাচাষীর তালিকা</button>
-<button class="btn btn2"><a href="{{url('/showFloodVuln')}}">বন্যায় আক্রান্ত প্যানেল ডেটা</button>
-<button class="btn btn2"><a href="{{url('/showMap')}}">Show Hit Map</button>
+
+<button class="btn btn2"><a href="{{url('/showMap')}}">Show Spatial Locations</button>
 
 </body>
 </html>
